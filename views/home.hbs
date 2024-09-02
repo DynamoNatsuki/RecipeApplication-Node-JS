@@ -1,0 +1,24 @@
+<h2>Welcome to this recipe page!</h2>
+
+<!-- Button to navigate to the create recipe page -->
+<a href="/Recipes/create">
+    <button type="button">Create New Recipe</button>
+</a> <br>
+
+{{#each recipes}}
+<h3><a href="/Recipes/{{_id}}">{{Name}}</a></h3>
+<p><em>{{Summary}}</em></p>
+<p>{{Description}}</p>
+<img src="{{Image}}" alt="{{Name}}" style = "width: 150px; height: 150px; border-radius: 10%;">
+<br>
+<!-- Button to navigate to the edit page -->
+<a href="/Recipes/{{_id}}/edit">
+    <button type="button">Edit Recipe</button>
+</a>
+
+<!-- Button to navigate to the delete confirmation page -->
+<a href="/Recipes/{{_id}}/delete">
+    <button type="button">Delete Recipe</button>
+</a>
+
+{{/each}}

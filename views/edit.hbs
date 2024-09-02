@@ -1,0 +1,14 @@
+<h2>Edit Recipe</h2>
+
+<form action="/Recipes/{{recipe._id}}/edit" method="POST">
+    <label for="Name">Name:</label><br>
+    <input type="text" id="Name" name="Name" value="{{recipe.Name}}" required><br><br>
+
+    <label for="Summary">Summary:</label><br>
+    <textarea id="Summary" name="Summary" required>{{recipe.Summary}}</textarea><br><br>
+
+    <label for="Description">Description:</label><br>
+    <textarea id="Description" name="Description" required>{{recipe.Description}}</textarea><br><br>
+
+    <button type="submit">Update Recipe</button>
+</form>

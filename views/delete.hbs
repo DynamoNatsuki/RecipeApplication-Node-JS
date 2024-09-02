@@ -1,0 +1,14 @@
+<h2>Confirm Deletion</h2>
+
+<p>Are you sure you want to delete the following recipe?</p>
+
+<h3>{{recipe.Name}}</h3>
+<p><em>{{recipe.Summary}}</em></p>
+<p>{{recipe.Description}}</p>
+<img src="{{recipe.Image}}" alt="{{recipe.Name}}" style="width: 150px; height: 150px; border-radius: 10%;">
+
+<!-- Form to confirm deletion -->
+<form action="/Recipes/{{recipe._id}}/delete" method="POST">
+    <button type="submit">Confirm Delete</button>
+    <a href="/">Cancel</a>
+</form>

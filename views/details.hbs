@@ -1,0 +1,14 @@
+<h2>Details</h2>
+
+<h3>{{recipe.Name}}</h3>
+<p><em>{{recipe.Summary}}</em></p>
+<p>{{recipe.Description}}</p>
+<img src="{{recipe.Image}}" alt="{{recipe.Name}}" style = "width: 150px; height: 150px; border-radius: 10%;">
+<br>
+<!-- Button to navigate to the edit page -->
+<a href="/Recipes/{{recipe._id}}/edit">
+    <button type="button">Edit Recipe</button>
+</a>
+<a href="/">
+    <button type = "button">Home</button>
+</a>

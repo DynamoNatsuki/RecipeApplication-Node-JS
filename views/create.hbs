@@ -1,0 +1,17 @@
+<h2>Create a New Recipe</h2>
+
+<form action="/Recipes/create" method="POST">
+    <label for="Name">Name:</label><br>
+    <input type="text" id="Name" name="Name" required><br><br>
+
+    <label for="Summary">Summary:</label><br>
+    <textarea id="Summary" name="Summary" required></textarea><br><br>
+
+    <label for="Description">Description:</label><br>
+    <textarea id="Description" name="Description" required></textarea><br><br>
+
+    <label for="Image">Image URL:</label><br>
+    <input type="text" id="Image" name="Image"><br><br>
+
+    <button type="submit">Create Recipe</button>
+</form>
